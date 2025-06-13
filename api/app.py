@@ -18,7 +18,7 @@ app = FastAPI(title="Kids Chat API")
 # This allows the API to be accessed from different domains/origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins
+        allow_origins=["https://frontend-theta-ten-24.vercel.app", "http://localhost:3000", "https://frontend-j6h7d4fdl-taaha161s-projects.vercel.app"],  # Allow all origins
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods
     allow_headers=["*"],  # Allow all headers

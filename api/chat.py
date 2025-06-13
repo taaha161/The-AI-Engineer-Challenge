@@ -18,7 +18,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://frontend-theta-ten-24.vercel.app/", "http://localhost:3000"],  # React app's address
+    allow_origins=["https://frontend-theta-ten-24.vercel.app", "http://localhost:3000", "https://frontend-j6h7d4fdl-taaha161s-projects.vercel.app"],  # React app's address
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
