@@ -18,7 +18,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://frontend-theta-ten-24.vercel.app/"],  # React app's address
+    allow_origins=["https://frontend-theta-ten-24.vercel.app/", "http://localhost:3000"],  # React app's address
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -68,4 +68,4 @@ async def chat_with_gpt(chat_message: ChatMessage):
 if __name__ == "__main__":
     import uvicorn
     logger.info("Starting server...")
-    uvicorn.run(app, host="0.0.0.0", port=8000) 
+    uvicorn.run(app, host="localhost", port=8000) 

@@ -142,7 +142,7 @@ function Chat() {
     setIsLoading(true);
 
     try {
-      const apiUrl = 'https://aicode-n2nw6eu2f-taaha161s-projects.vercel.app';
+      const apiUrl = 'http://localhost:8000';
       console.log('Sending request to:', apiUrl);
       
       const response = await fetch(`${apiUrl}/api/chat`, {
