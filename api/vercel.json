@@ -4,6 +4,6 @@
       { "src": "app.py", "use": "@vercel/python" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "app.py" }
+      { "src": "/api/(.*)", "dest": "app.py", "headers": { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS", "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept" } }
     ]
   } 
