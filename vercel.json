@@ -4,7 +4,10 @@
       { "src": "frontend/package.json", "use": "@vercel/static-build" },
       { 
         "src": "api/app.py",
-        "use": "@vercel/python"
+        "use": "@vercel/python",
+        "config": {
+          "distDir": "build"
+        }
       }
     ],
     "routes": [
