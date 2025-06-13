@@ -174,7 +174,7 @@ function Chat() {
       setMessages(prev => [
         ...prev,
         {
-          text: `Oops! Something went wrong!\n\nError: ${error.message}\n\nAPI URL: http://localhost:8000`,
+          text: `Oops! Something went wrong!\n\nError: ${error.message}\n\n`,
           isUser: false,
         },
       ]);
